@@ -22,7 +22,7 @@ export default {
     }
   },
   async created() {
-    const usersRequest = await axios.get('/users/initialize')
+    const usersRequest = await axios.get('http://localhost:3000/users')
     this.users = usersRequest.data
   },
 }

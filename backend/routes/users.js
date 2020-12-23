@@ -6,7 +6,7 @@ const users = []
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
-  res.send('respond with a resource')
+  res.send(users)
 })
 router.get('/initialize', (req, res, next) => {
   const hilmi = new User('hlmgnc', 'hlmgnc@gmail.com')
